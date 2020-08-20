@@ -282,7 +282,7 @@ p {
 
 .about-image-4 {
   width: 50%;
-  background-image: url('../images/nuno-marques-educator2x.jpg');
+  background-image: url('../images/nuno-marques-educator.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -464,6 +464,14 @@ p {
   background-color: transparent;
 }
 
+.prices-mobile {
+  position: relative;
+  z-index: 10;
+  display: none;
+  margin-top: -90px;
+  padding-bottom: 100px;
+}
+
 @media screen and (max-width: 991px) {
   .header {
     height: 500px;
@@ -544,6 +552,9 @@ p {
   .modal-wrapper {
     display: none;
   }
+  .prices-mobile {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -560,6 +571,9 @@ p {
     margin-top: 30px;
     padding: 18px 32px;
     font-size: 18px;
+  }
+  .services {
+    display: none;
   }
   .row.flex-vertical {
     -webkit-box-orient: vertical;
@@ -594,6 +608,9 @@ p {
   }
   .about-me-h2 {
     font-size: 80px;
+  }
+  .about {
+    margin-top: 50px;
   }
   .about-image-4 {
     height: 400px;
@@ -631,6 +648,10 @@ p {
   }
   .modal {
     width: 100%;
+  }
+  .prices-mobile {
+    display: block;
+    padding-bottom: 50px;
   }
 }
 
